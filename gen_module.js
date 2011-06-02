@@ -7,7 +7,7 @@ argv.splice(0,2);
 if(argv.length<1)
     throw new Error("I need project name");
 var name=argv[0];
-var parentPath=argv[1] || __dirname;
+var parentPath=argv[1] || process.cwd();
 
 var projPath=path.join(parentPath,name);
 

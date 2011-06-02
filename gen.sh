@@ -1,5 +1,5 @@
 #!/bin/sh
 
-node gen_module.js $@
+node $(dirname $0)/gen_module.js $@
 
 
