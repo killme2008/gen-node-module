@@ -12,7 +12,7 @@ var parentPath=argv[1] || process.cwd();
 
 var projPath=path.join(parentPath,name);
 
-if(path.existsSync(projPath)){
+if(fs.existsSync(projPath)){
     console.error(projPath+" is exists");
     process.reallyExit(1);
 }
